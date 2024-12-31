@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Products</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <header>
+    <h1>Order Products</h1>
+    <p>Get your favorite products delivered to your doorstep!</p>
+  </header>
+
+  <main>
+    <section class="order-form">
+      <h2>Place Your Order</h2>
+      <form id="orderForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="product">Select Product:</label>
+          <select id="product" name="product" required>
+            <option value="">Choose a product</option>
+            <option value="Santoor_Soap">Santoor Soap - 33 Rs</option>
+            <option value="No1_Soap">No1 Soap - 30 Rs</option>
+            <option value="Nim_Soap">Nim Soap - 50 Rs</option>
+            <option value="Sugar">Sugar - 40 Rs/Kg</option>
+            <option value="Gold_Tea">Gold Tea - 30 Rs</option>
+            <option value="Milk">Milk - 70 Rs/Li</option>
+            <option value="Wheel_Soap">Wheel Soap - 10 Rs/1n</option>
+            <option value="Wheel_Nirms">Wheel Nirma - 60 Rs/Kg</option>
+            <option value="Oziva">Oziva P/H - 300 Rs</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Shipping Address:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+<br>
+   
+  </main>
+  <section class="order-summary summary">
+    <h2>Order Summary</h2>
+    <p id="summaryText">Your order details will appear here.</p>
+    <!-- <h2 class="cash">Cash On Delivery</h2> -->
+  </section>
+  <footer>
+    <p>&copy; 2025 Order Products. All rights reserved.</p>
+  </footer>
+
+  <script src="order.js"></script>
+</body>
+</html>
